@@ -1,9 +1,7 @@
 //escrevendo modelo para DIO, posteriormente transformando para vscode
 const prompt = require('prompt-sync')();
 //- Variáveis
-let name = "Guerreiro Zev"
-console.log("Bem vindo ao jogo! Eu sou o " + name + " e vamos juntos vencer o desafio do Felipão!");
-
+//- estrututra condicional
 class Heroi {
     constructor(name, idade, tipo) {
         this.name = name
@@ -13,6 +11,7 @@ class Heroi {
     
    ataque () {
 let ataque = ""
+//- criando switch case para definir o tipo de ataque do heroi
 
 switch(this.tipo) {
     case "mago":
@@ -36,10 +35,10 @@ console.log(`O ${this.tipo} atacou usando ${ataque}`)
          
 }
 }
-
+// dando vida aos herois
 let guerreiro = new Heroi('Zev', '36', 'guerreiro');
 let mago = new Heroi('Eron', '42', 'mago');
 let monge = new Heroi('Ryu', '29', 'monge');
 let ninja = new Heroi('Renji', '25', 'ninja');
 
-ninja.ataque()
+guerreiro.ataque()
