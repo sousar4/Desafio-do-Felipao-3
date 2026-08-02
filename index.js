@@ -5,11 +5,13 @@ let name = "Guerreiro Zev"
 console.log("Bem vindo ao jogo! Eu sou o " + name + " e vamos juntos vencer o desafio do Felipão!");
 
 class Heroi {
-    constructor(name, idade, tipo) {
-        this.name = "Zev"
-        this.idade = 36
-        this.tipo = Guerreiro
+    constructor(nameHeroi, idadeHeroi, tipoHeroi) {
+        this.nameHeroi = nameHeroi
+        this.idadeHeroi = idadeHeroi
+        this.tipoHeroi = tipoHeroi
     }
+let Heroi = new Heroi("Zev", 36, "Guerreiro");
+
     atacar(){
         console.log("O " + `${this.tipo}` + `${this.name}` + atacou com `${this.poder}!`);
             
