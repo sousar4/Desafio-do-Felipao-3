@@ -1,4 +1,4 @@
-//escrevendo modelo para DIO, posteriormente transformando para vscode
+//Escrevendo as Classes de Um Jogo de herois para o projeto do Felipao da DIO
 const prompt = require('prompt-sync')();
 //- Variáveis
 //- estrututra condicional
@@ -10,8 +10,8 @@ class Heroi {
     }
     
    ataque () {
-let ataque = ""
 //- criando switch case para definir o tipo de ataque do heroi
+let ataque = ""
 
 switch(this.tipo) {
     case "mago":
@@ -33,7 +33,7 @@ switch(this.tipo) {
         
 console.log(`O ${this.tipo} atacou usando ${ataque}`)
          
-}
+    }
 }
 // dando vida aos herois
 let guerreiro = new Heroi('Zev', '36', 'guerreiro');
