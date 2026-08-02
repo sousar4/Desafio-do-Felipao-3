@@ -9,33 +9,37 @@ class Heroi {
         this.name = name
         this.idade = idade
         this.tipo = tipo
-        this.ataque = ataque
     }
     
    ataque () {
+let ataque = ""
+
 switch(this.tipo) {
     case "mago":
-        ataque = magia;
+        ataque = "magia";
         break;
 
     case "guerreiro":
-        ataque = espada;
+        ataque = "espada";
         break;
 
     case "monge":
-        ataque = artes marciais;
+        ataque = "artes marciais";
         break;
 
     case "ninja":
-        ataque = shuriken;
+        ataque = "shuriken";
         break;
-         }
+		}
+        
+console.log(`O ${this.tipo} atacou usando ${ataque}`)
+         
+}
 }
 
-let guerreiro = new Heroi('Zev', '36', 'Guerreiro');
-let mago = new Heroi('Eron', '42', 'Mago');
-let monge = new Heroi('Ryu', '29', 'Monge');
-let ninja = new Heroi('Renji', '25', 'Ninja');
+let guerreiro = new Heroi('Zev', '36', 'guerreiro');
+let mago = new Heroi('Eron', '42', 'mago');
+let monge = new Heroi('Ryu', '29', 'monge');
+let ninja = new Heroi('Renji', '25', 'ninja');
 
-
-guerreiro.ataque()
+ninja.ataque()
